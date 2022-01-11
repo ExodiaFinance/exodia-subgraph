@@ -179,7 +179,7 @@ function getMV_RFV(transaction: Transaction): ITreasury{
     const monolithTotalPoolMv = monolithMaiValue.plus(monolithExodValue).plus(monolithWsExodValue).plus(monolithWFtmValue).plus(monolithGOhmValue)
 
     const totalMaiBalance = maiBalance.plus(monolithMaiBalance);
-    let stableValue = daiBalance.plus(totalMaiBalance);
+    let stableValue = daiBalance.plus(maiBalance);
 
     let lpValue = ohmdai_value
     let rfvLpValue = ohmdai_rfv
